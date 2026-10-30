@@ -47,6 +47,8 @@ class CalculadoraRestHandler(BaseHTTPRequestHandler):
                         self._responder_json(400, {"erro": "Divisão por zero."})
                         return
                     resultado = op1 / op2
+                elif operacao == '**':
+                    resultado = op1 ** op2
                 else:
                     self._responder_json(400, {"erro": f"Operação desconhecida: {operacao}"})
                     return

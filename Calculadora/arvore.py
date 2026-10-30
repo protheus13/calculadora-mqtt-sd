@@ -29,6 +29,7 @@ class Calculadora:
                 ast.Sub: '-',
                 ast.Mult: '*',
                 ast.Div: '/',
+                ast.Pow: '**'
             }
             simbolo = operadores[type(no_ast.op)]
                 
@@ -58,6 +59,8 @@ class Calculadora:
             return valor_esq - valor_dir
         elif no.operacao == '*':
             return valor_esq * valor_dir
+        elif no.operacao == '**':
+            return valor_esq ** valor_dir
         elif no.operacao == '/':
             if valor_dir == 0:
                 raise ZeroDivisionError("Divisao por zero.")

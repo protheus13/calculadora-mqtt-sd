@@ -46,6 +46,8 @@ def resolver_no_cliente_via_rmi(no, proxy):
         return proxy.multiplicar(valor_esq, valor_dir)
     elif no.operacao == '/':
         return proxy.dividir(valor_esq, valor_dir)
+    elif no.operacao == '**':
+        return proxy.potencia(valor_esq, valor_dir)
     else:
         raise ValueError(f"Operação desconhecida: {no.operacao}")
 
@@ -123,6 +125,8 @@ if __name__ == "__main__":
                     resultado = proxy_calc.multiplicar(op1, op2)
                 elif operacao == '/':
                     resultado = proxy_calc.dividir(op1, op2)
+                elif operacao == '**':
+                    resultado = proxy_calc.potencia(op1, op2)
                 else:
                     print("[!] Operação inválida.")
                     continue

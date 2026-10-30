@@ -22,6 +22,9 @@ class CalculadoraRMI:
         if float(op2) == 0:
             raise ZeroDivisionError("Divisao por zero.")
         return float(op1) / float(op2)
+    
+    def potencia(self, op1, op2):
+        return float(op1) ** float(op2)
 
     def calcular_expressao(self, dados_arvore):
         """

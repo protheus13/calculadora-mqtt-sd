@@ -137,7 +137,7 @@ if __name__ == "__main__":
         elif opcao == "3":
             try:
                 op1 = float(input("Digite o primeiro número: "))
-                operacao = input("Digite a operação (+, -, *, /): ").strip()
+                operacao = input("Digite a operação (+, -, *, /, **): ").strip()
                 op2 = float(input("Digite o segundo número: "))
 
                 payload = {"operacao": operacao, "op1": op1, "op2": op2}

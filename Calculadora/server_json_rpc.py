@@ -20,6 +20,8 @@ def executar_metodo(metodo, params):
         if float(params["op2"]) == 0:
             raise ZeroDivisionError("Divisão por zero.")
         return float(params["op1"]) / float(params["op2"])
+    elif metodo == "potencia":
+        return float(params["op1"]) ** float(params["op2"])
     elif metodo == "calcular_arvore":
         arvore_reconstruida = Calculadora.de_dict(params["arvore"])
         return Calculadora.calcular_arvore(arvore_reconstruida)
