@@ -5,8 +5,8 @@
 #include <ArduinoJson.h>  //Biblioteca para criar e manipular objetos JSON
 
 // Configurando WiFi
-const char* SSID = "SpaceX";             //Nome da rede WiFi
-const char* PASSWORD = "socorromagal2025";                    //Senha da rede Wifi
+const char* SSID = "";             //Nome da rede WiFi
+const char* PASSWORD = "";                    //Senha da rede Wifi
 
 // Configurando conexão ao Broker MQTT
 const char* MQTT_HOST = "0.tcp.sa.ngrok.io";  //Endereço do servidor MQTT
