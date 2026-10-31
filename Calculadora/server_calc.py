@@ -17,6 +17,8 @@ def executar_operacao(operacao, op1, op2):
                 if op2 == 0:
                     raise ZeroDivisionError("Divisao por zero.")
                 return op1 / op2
+            elif operacao == '**':
+                return op1 ** op2
             else:
                 raise ValueError("Operacao nao reconhecida {operacao}.")
 
